@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgro Digital - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">EcoAgro <span>Digital</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#pilares">Pilares</a>
+            <a href="#simulador">Simulador</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do nosso planeta.</p>
+            <a href="#simulador" class="btn-principal">Testar Simulador</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="secao">
+        <h2>Práticas Tecnológicas e Sustentáveis</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>🌾 Rotação de Culturas</h3>
+                <p>Alternar as espécies plantadas ajuda a manter os nutrientes do solo e reduz pragas sem excesso de químicos.</p>
+            </div>
+            <div class="card">
+                <h3>💧 Irrigação Inteligente</h3>
+                <p>Sistemas com sensores que aplicam a quantidade exata de água que a planta precisa, evitando desperdícios.</p>
+            </div>
+            <div class="card">
+                <h3>🛰️ Agricultura de Precisão</h3>
+                <p>Uso de drones e satélites para monitorar a saúde da lavoura, otimizando o uso de recursos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="secao bg-claro">
+        <h2>Simulador de Fazenda Sustentável</h2>
+        <p>Ative as práticas sustentáveis abaixo e veja o nível de equilíbrio da sua produção:</p>
+        
+        <div class="simulador-container">
+            <div class="opcoes">
+                <label>
+                    <input type="checkbox" id="chkRotacao" onchange="atualizarPontuacao()"> Adotar Rotação de Culturas (+25 pts)
+                </label>
+                <label>
+                    <input type="checkbox" id="chkSolar" onchange="atualizarPontuacao()"> Usar Energia Solar na Fazenda (+25 pts)
+                </label>
+                <label>
+                    <input type="checkbox" id="chkRefloresta" onchange="atualizarPontuacao()"> Preservar Áreas de APP / Matas Ciliares (+50 pts)
+                </label>
+            </div>
+
+            <div class="resultado">
+                <h3>Pontuação de Sustentabilidade:</h3>
+                <div id="pontos">0 pontos</div>
+                <p id="mensagem-status">Sua fazenda precisa adotar práticas ecológicas!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Concurso Agrinho - Desenvolvido com foco no Futuro Sustentável.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
