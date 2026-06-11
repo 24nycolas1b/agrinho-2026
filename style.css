@@ -1,0 +1,136 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1000') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-top: 5px solid #4caf50;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* Simulador Interativo */
+.simulador {
+    background-color: #e8f5e9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #c8e6c9;
+    text-align: center;
+}
+
+.simulador h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.opcoes label {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.resultado-bom {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+
+.resultado-alerta {
+    background-color: #fff9c4;
+    color: #f57f17;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e7d32;
+    color: white;
+    margin-top: 40px;
+}
