@@ -3,73 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoAgro Digital - Agrinho 2026</title>
+    <title>Agro Forte, Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">EcoAgro <span>Digital</span></div>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#pilares">Pilares</a>
-            <a href="#simulador">Simulador</a>
-        </nav>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio perfeito entre a produção e a preservação do meio ambiente</p>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Agro Forte, Futuro Sustentável</h1>
-            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do nosso planeta.</p>
-            <a href="#simulador" class="btn-principal">Testar Simulador</a>
-        </div>
-    </section>
+    <main>
+        <section class="intro">
+            <h2>Tecnologia e Natureza Juntas</h2>
+            <p>O futuro da agricultura depende da nossa capacidade de inovar sem esgotar os recursos naturais. Conheça as práticas que estão transformando o campo!</p>
+        </section>
 
-    <section id="pilares" class="secao">
-        <h2>Práticas Tecnológicas e Sustentáveis</h2>
-        <div class="cards-container">
+        <section class="cards-container">
             <div class="card">
-                <h3>🌾 Rotação de Culturas</h3>
-                <p>Alternar as espécies plantadas ajuda a manter os nutrientes do solo e reduz pragas sem excesso de químicos.</p>
+                <h3>Agtechs</h3>
+                <p>Uso de drones e sensores para aplicar água e fertilizantes apenas onde é necessário, evitando desperdícios.</p>
             </div>
             <div class="card">
-                <h3>💧 Irrigação Inteligente</h3>
-                <p>Sistemas com sensores que aplicam a quantidade exata de água que a planta precisa, evitando desperdícios.</p>
+                <h3>Energia Limpa</h3>
+                <p>Fazendas utilizando painéis solares e biomassa para gerar a própria energia de forma 100% renovável.</p>
             </div>
             <div class="card">
-                <h3>🛰️ Agricultura de Precisão</h3>
-                <p>Uso de drones e satélites para monitorar a saúde da lavoura, otimizando o uso de recursos.</p>
+                <h3>Preservação</h3>
+                <p>Manutenção de áreas de mata nativa e proteção de nascentes integradas às áreas de cultivo.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="simulador" class="secao bg-claro">
-        <h2>Simulador de Fazenda Sustentável</h2>
-        <p>Ative as práticas sustentáveis abaixo e veja o nível de equilíbrio da sua produção:</p>
-        
-        <div class="simulador-container">
+        <section class="simulador">
+            <h2>Simulador: Fazenda do Futuro</h2>
+            <p>Escolha quais práticas você adotaria na sua fazenda e veja o impacto:</p>
+            
             <div class="opcoes">
                 <label>
-                    <input type="checkbox" id="chkRotacao" onchange="atualizarPontuacao()"> Adotar Rotação de Culturas (+25 pts)
+                    <input type="checkbox" id="agua"> Reuso de água da chuva
                 </label>
                 <label>
-                    <input type="checkbox" id="chkSolar" onchange="atualizarPontuacao()"> Usar Energia Solar na Fazenda (+25 pts)
+                    <input type="checkbox" id="solar"> Instalação de energia solar
                 </label>
                 <label>
-                    <input type="checkbox" id="chkRefloresta" onchange="atualizarPontuacao()"> Preservar Áreas de APP / Matas Ciliares (+50 pts)
+                    <input type="checkbox" id="plantio"> Plantio direto (protege o solo)
                 </label>
             </div>
 
-            <div class="resultado">
-                <h3>Pontuação de Sustentabilidade:</h3>
-                <div id="pontos">0 pontos</div>
-                <p id="mensagem-status">Sua fazenda precisa adotar práticas ecológicas!</p>
-            </div>
-        </div>
-    </section>
+            <button onclick="calcularImpacto()">Calcular Sustentabilidade</button>
+
+            <div id="resultado" class="resultado-oculto">
+                </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Concurso Agrinho - Desenvolvido com foco no Futuro Sustentável.</p>
+        <p>&copy; 2026 - Projeto Desenvolvido para o Concurso Agrinho</p>
     </footer>
 
     <script src="script.js"></script>
